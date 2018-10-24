@@ -1,0 +1,10 @@
+<ActionBar android:title="Test">
+    <ActionItem text="Home" ios.position="right" android.position="popup" [nsRouterLink]="['/']"></ActionItem>
+    <ActionItem text="Web" ios.position="right" android.position="popup" [nsRouterLink]="['/web']"></ActionItem>
+    <NavigationButton icon="res://ic_arrow_back_black_24dp" (tap)="goBack()"></NavigationButton>
+</ActionBar>
+
+
+<StackLayout class="page">
+    <Image src="~/images/dev.jpg" stretch="aspectFit" class="img-rounded p-l-30 p-r-30"></Image>
+</StackLayout>

@@ -1,7 +1,10 @@
-<ActionBar class="action-bar">
-    <Label class="action-bar-title" text="Home"></Label>
+<ActionBar android:title="Home">
+    <ActionItem text="Test" ios.position="right" android.position="popup" [nsRouterLink]="['/test']"></ActionItem>
+    <ActionItem text="Web" ios.position="right" android.position="popup" [nsRouterLink]="['/web']"></ActionItem>
 </ActionBar>
 
-<GridLayout class="page">
-    <!-- Add your page content here -->
-</GridLayout>
+
+<StackLayout class="page">
+  <Button text="Go to Test" [nsRouterLink]="['/test']" class="link"></Button>
+  <Button text="Go to Web" [nsRouterLink]="['/web']" class="link"></Button>
+</StackLayout>

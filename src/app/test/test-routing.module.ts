@@ -1,10 +1,10 @@
 import { NgModule } from "@angular/core";
 import { Routes } from "@angular/router";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { HomeComponent } from "./home.component";
+import { TestComponent } from "./test.component";
 
 const routes: Routes = [
-    { path: "", component: HomeComponent }
+    { path: "", component: TestComponent }
 ];
 
 @NgModule({
@@ -12,4 +12,4 @@ const routes: Routes = [
     exports: [NativeScriptRouterModule]
 })
 
-export class HomeRoutingModule { }
+export class TestRoutingModule { }

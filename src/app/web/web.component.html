@@ -1,0 +1,9 @@
+<ActionBar android:title="Web">
+    <ActionItem text="Home" ios.position="right" android.position="popup" [nsRouterLink]="['/']"></ActionItem>
+    <ActionItem text="Test" ios.position="right" android.position="popup" [nsRouterLink]="['/test']"></ActionItem>
+    <NavigationButton icon="res://ic_arrow_back_black_24dp" (tap)="goBack()"></NavigationButton>
+</ActionBar>
+
+<GridLayout>
+    <WebView row="0" src={{webViewSrc}}></WebView>
+</GridLayout>
